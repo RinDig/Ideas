@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Investment-Ready Software Portfolio - Seven Market-Validated Opportunities with $150B+ Combined TAM">
+    <meta property="og:title" content="Investment-Ready Software Portfolio">
+    <meta property="og:description" content="Seven market-validated AI software opportunities with $150B+ combined TAM, growing to $550B+ by 2033">
+    <title>Investment-Ready Software Portfolio</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Source+Sans+Pro:wght@400;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">INVESTMENT-READY SOFTWARE PORTFOLIO</h1>
+            <p class="hero-subtitle">Seven Market-Validated Opportunities</p>
+            <div class="scroll-indicator">
+                <span>Scroll to Explore</span>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 5V19M12 19L19 12M12 19L5 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- Market Overview Section -->
+    <section class="market-overview">
+        <div class="container">
+            <h2 class="section-title">Total Addressable Market Across All Products</h2>
+            <div class="market-stats">
+                <div class="stat-box">
+                    <div class="stat-number" data-target="150">$0B+</div>
+                    <div class="stat-label">Combined TAM in 2025</div>
+                </div>
+                <div class="stat-arrow">→</div>
+                <div class="stat-box">
+                    <div class="stat-number" data-target="550">$0B+</div>
+                    <div class="stat-label">Growing to 2033</div>
+                </div>
+            </div>
+            <div class="growth-chart">
+                <canvas id="marketGrowthChart"></canvas>
+            </div>
+        </div>
+    </section>
+
+    <!-- Software Grid -->
+    <section class="software-grid">
+        <div class="container">
+            <h2 class="section-title">Software Portfolio</h2>
+            <div class="grid">
+                <!-- Card 1: Multi-Agent Compliance Platform -->
+                <div class="software-card">
+                    <div class="card-icon">⚖️</div>
+                    <h3 class="card-title">Multi-Agent Compliance Platform</h3>
+                    <p class="card-description">Automated regulatory analysis & risk assessment for enterprise compliance</p>
+                    <div class="card-stats">
+                        <div class="stat">
+                            <span class="stat-label">Market</span>
+                            <span class="stat-value">$36B → $66B</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">CAGR</span>
+                            <span class="stat-value">12.7%</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">MVP Time</span>
+                            <span class="stat-value">2-3 months</span>
+                        </div>
+                    </div>
+                    <a href="software/compliance.html" class="card-link">View Details →</a>
+                </div>
+
+                <!-- Card 2: AI Model Evaluation Platform (Eduba) -->
+                <div class="software-card">
+                    <div class="card-icon">🎓</div>
+                    <h3 class="card-title">AI Model Evaluation Platform</h3>
+                    <p class="card-description">Compare AI models in real-time for education and enterprise decision-making</p>
+                    <div class="card-stats">
+                        <div class="stat">
+                            <span class="stat-label">Market</span>
+                            <span class="stat-value">$43B → $87B</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">CAGR</span>
+                            <span class="stat-value">14.2%</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">MVP Time</span>
+                            <span class="stat-value">3-4 months</span>
+                        </div>
+                    </div>
+                    <a href="software/eduba.html" class="card-link">View Details →</a>
+                </div>
+
+                <!-- Card 3: Generative UI Browser -->
+                <div class="software-card">
+                    <div class="card-icon">🎨</div>
+                    <h3 class="card-title">Generative UI Browser</h3>
+                    <p class="card-description">Real-time interface generation powered by AI for dynamic web experiences</p>
+                    <div class="card-stats">
+                        <div class="stat">
+                            <span class="stat-label">Market</span>
+                            <span class="stat-value">$20B → $50B</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">CAGR</span>
+                            <span class="stat-value">17.5%</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">MVP Time</span>
+                            <span class="stat-value">4-5 months</span>
+                        </div>
+                    </div>
+                    <a href="software/ui-browser.html" class="card-link">View Details →</a>
+                </div>
+
+                <!-- Card 4: AI-Enhanced Planning Assistant -->
+                <div class="software-card">
+                    <div class="card-icon">📅</div>
+                    <h3 class="card-title">AI-Enhanced Planning Assistant</h3>
+                    <p class="card-description">Optimized scheduling with location, social, and preference awareness</p>
+                    <div class="card-stats">
+                        <div class="stat">
+                            <span class="stat-label">Market</span>
+                            <span class="stat-value">$98B → $183B</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">CAGR</span>
+                            <span class="stat-value">13.2%</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">MVP Time</span>
+                            <span class="stat-value">3-4 months</span>
+                        </div>
+                    </div>
+                    <a href="software/planning.html" class="card-link">View Details →</a>
+                </div>
+
+                <!-- Card 5: ChatGPT App Marketplace Tools -->
+                <div class="software-card">
+                    <div class="card-icon">🛍️</div>
+                    <h3 class="card-title">ChatGPT App Marketplace Tools</h3>
+                    <p class="card-description">First-mover advantage with planning and fine-tuning tools for ChatGPT's marketplace</p>
+                    <div class="card-stats">
+                        <div class="stat">
+                            <span class="stat-label">Market</span>
+                            <span class="stat-value">New Market</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">CAGR</span>
+                            <span class="stat-value">Est. 25%+</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">MVP Time</span>
+                            <span class="stat-value">2 months</span>
+                        </div>
+                    </div>
+                    <a href="software/chatgpt-apps.html" class="card-link">View Details →</a>
+                </div>
+
+                <!-- Card 6: LLM Ethics Engine -->
+                <div class="software-card">
+                    <div class="card-icon">🔍</div>
+                    <h3 class="card-title">LLM Ethics Engine</h3>
+                    <p class="card-description">Psychometric profiling of AI models to detect bias and ensure ethical deployment</p>
+                    <div class="card-stats">
+                        <div class="stat">
+                            <span class="stat-label">Market</span>
+                            <span class="stat-value">$0.34B → $1.2B</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">CAGR</span>
+                            <span class="stat-value">28.8%</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">MVP Time</span>
+                            <span class="stat-value">2-3 months</span>
+                        </div>
+                    </div>
+                    <a href="software/ethics-engine.html" class="card-link">View Details →</a>
+                </div>
+
+                <!-- Card 7: Supervisor Assistant Platform -->
+                <div class="software-card">
+                    <div class="card-icon">🏗️</div>
+                    <h3 class="card-title">Supervisor Assistant Platform</h3>
+                    <p class="card-description">Instant answers to crew questions, spec lookup, and supply ordering for construction</p>
+                    <div class="card-stats">
+                        <div class="stat">
+                            <span class="stat-label">Market</span>
+                            <span class="stat-value">$11B → $17B</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">CAGR</span>
+                            <span class="stat-value">9.4%</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">MVP Time</span>
+                            <span class="stat-value">2 months</span>
+                        </div>
+                    </div>
+                    <a href="software/supervisor.html" class="card-link">View Details →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visual Comparison Section -->
+    <section class="comparison-section">
+        <div class="container">
+            <h2 class="section-title">Market Size Comparison</h2>
+            <div class="chart-container">
+                <canvas id="marketComparisonChart"></canvas>
+            </div>
+            <div class="cta-box">
+                <h3>Explore Detailed Analysis</h3>
+                <a href="comparison.html" class="btn-primary">View Market Comparison →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <h2>Ready to Build the Future?</h2>
+            <p>These opportunities represent $150B+ in addressable market opportunity</p>
+            <a href="mailto:contact@portfolio.com" class="btn-primary">Schedule a Discussion</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Software Portfolio. All market data sources available upon request.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <script src="assets/js/animations.js"></script>
+    <script src="assets/js/charts.js"></script>
+</body>
+</html>

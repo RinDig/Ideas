@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Market Comparison & Investment Matrix - Compare all 7 software opportunities">
+    <title>Market Comparison & Investment Matrix | Software Portfolio</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/comparison.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Source+Sans+Pro:wght@400;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="nav-bar">
+        <div class="container nav-container">
+            <a href="index.html" class="nav-logo">← Portfolio</a>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1>Market Comparison & Investment Matrix</h1>
+            <p class="subtitle">Data-Driven Analysis Across All Seven Opportunities</p>
+        </div>
+    </header>
+
+    <main>
+        <!-- Market Size Comparison -->
+        <section class="comparison-section">
+            <div class="container">
+                <h2 class="section-title">Market Size Comparison (2025)</h2>
+                <div class="chart-wrapper">
+                    <canvas id="marketSizeChart"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <!-- Growth Rate Comparison -->
+        <section class="comparison-section bg-white">
+            <div class="container">
+                <h2 class="section-title">Growth Rate vs Market Size</h2>
+                <p class="section-description">Bubble size represents time to MVP (smaller = faster to market)</p>
+                <div class="chart-wrapper">
+                    <canvas id="bubbleChart"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <!-- Investment Priority Matrix -->
+        <section class="comparison-section">
+            <div class="container">
+                <h2 class="section-title">Investment Priority Matrix</h2>
+
+                <div class="priority-grid">
+                    <!-- Fast Cash Flow & Validation -->
+                    <div class="priority-category fast-cash">
+                        <h3>Fast Cash Flow & Validation</h3>
+                        <p class="category-description">Proven demand, fast to market, immediate revenue</p>
+                        <div class="priority-cards">
+                            <div class="priority-card">
+                                <div class="card-header">
+                                    <span class="card-icon">🏗️</span>
+                                    <h4>Supervisor Assistant</h4>
+                                </div>
+                                <div class="card-badge success">Have Clients</div>
+                                <ul class="card-details">
+                                    <li>Market: $11B → $17B</li>
+                                    <li>CAGR: 9.4%</li>
+                                    <li>MVP: 2 months</li>
+                                    <li>Status: Ready to deploy</li>
+                                </ul>
+                                <a href="software/supervisor.html" class="card-link">View Details →</a>
+                            </div>
+                            <div class="priority-card">
+                                <div class="card-header">
+                                    <span class="card-icon">⚖️</span>
+                                    <h4>Compliance Platform</h4>
+                                </div>
+                                <div class="card-badge success">POC Built</div>
+                                <ul class="card-details">
+                                    <li>Market: $36B → $66B</li>
+                                    <li>CAGR: 12.7%</li>
+                                    <li>MVP: 2-3 months</li>
+                                    <li>Status: Technical validation complete</li>
+                                </ul>
+                                <a href="software/compliance.html" class="card-link">View Details →</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Strategic Growth -->
+                    <div class="priority-category strategic">
+                        <h3>Strategic Growth</h3>
+                        <p class="category-description">High growth potential, regulatory tailwinds, strong positioning</p>
+                        <div class="priority-cards">
+                            <div class="priority-card">
+                                <div class="card-header">
+                                    <span class="card-icon">🔍</span>
+                                    <h4>Ethics Engine</h4>
+                                </div>
+                                <div class="card-badge warning">Gov Demand</div>
+                                <ul class="card-details">
+                                    <li>Market: $0.34B → $1.2B</li>
+                                    <li>CAGR: 28.8% (Highest)</li>
+                                    <li>MVP: 2-3 months</li>
+                                    <li>Driver: EU AI Act mandates</li>
+                                </ul>
+                                <a href="software/ethics-engine.html" class="card-link">View Details →</a>
+                            </div>
+                            <div class="priority-card">
+                                <div class="card-header">
+                                    <span class="card-icon">🎓</span>
+                                    <h4>Eduba Platform</h4>
+                                </div>
+                                <div class="card-badge warning">Proven Model</div>
+                                <ul class="card-details">
+                                    <li>Market: $43B → $87B</li>
+                                    <li>CAGR: 14.2%</li>
+                                    <li>MVP: 3-4 months</li>
+                                    <li>Driver: EdTech + Enterprise AI</li>
+                                </ul>
+                                <a href="software/eduba.html" class="card-link">View Details →</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Innovation Bets -->
+                    <div class="priority-category innovation">
+                        <h3>Innovation Bets</h3>
+                        <p class="category-description">Novel technology, larger markets, more competitive</p>
+                        <div class="priority-cards">
+                            <div class="priority-card">
+                                <div class="card-header">
+                                    <span class="card-icon">🎨</span>
+                                    <h4>Gen UI Browser</h4>
+                                </div>
+                                <div class="card-badge info">Novel Tech</div>
+                                <ul class="card-details">
+                                    <li>Market: $20B → $50B</li>
+                                    <li>CAGR: 17.5%</li>
+                                    <li>MVP: 4-5 months</li>
+                                    <li>Risk: Unproven concept</li>
+                                </ul>
+                                <a href="software/ui-browser.html" class="card-link">View Details →</a>
+                            </div>
+                            <div class="priority-card">
+                                <div class="card-header">
+                                    <span class="card-icon">📅</span>
+                                    <h4>Planning Assistant</h4>
+                                </div>
+                                <div class="card-badge info">Crowded Market</div>
+                                <ul class="card-details">
+                                    <li>Market: $98B → $183B (Largest)</li>
+                                    <li>CAGR: 13.2%</li>
+                                    <li>MVP: 3-4 months</li>
+                                    <li>Risk: High competition</li>
+                                </ul>
+                                <a href="software/planning.html" class="card-link">View Details →</a>
+                            </div>
+                            <div class="priority-card">
+                                <div class="card-header">
+                                    <span class="card-icon">🛍️</span>
+                                    <h4>ChatGPT Apps</h4>
+                                </div>
+                                <div class="card-badge info">New Market</div>
+                                <ul class="card-details">
+                                    <li>Market: New/Unknown</li>
+                                    <li>CAGR: Est. 25%+</li>
+                                    <li>MVP: 2 months</li>
+                                    <li>Risk: Market timing critical</li>
+                                </ul>
+                                <a href="software/chatgpt-apps.html" class="card-link">View Details →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Financial Projections -->
+        <section class="comparison-section bg-white">
+            <div class="container">
+                <h2 class="section-title">Financial Projections</h2>
+                <p class="section-description">Conservative estimates based on market data and comparable exits</p>
+
+                <div class="table-wrapper">
+                    <table class="projections-table">
+                        <thead>
+                            <tr>
+                                <th>Software</th>
+                                <th>MVP Revenue</th>
+                                <th>Year 1</th>
+                                <th>Year 3</th>
+                                <th>5-Year Exit Est.</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Supervisor Assistant</strong></td>
+                                <td>$60K</td>
+                                <td>$500K</td>
+                                <td>$3M</td>
+                                <td>$15-25M</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Compliance Platform</strong></td>
+                                <td>$100K</td>
+                                <td>$800K</td>
+                                <td>$5M</td>
+                                <td>$30-50M</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Ethics Engine</strong></td>
+                                <td>$60K</td>
+                                <td>$400K</td>
+                                <td>$3M</td>
+                                <td>$20-35M</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Eduba Platform</strong></td>
+                                <td>$200K</td>
+                                <td>$1M</td>
+                                <td>$8M</td>
+                                <td>$50-100M</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Gen UI Browser</strong></td>
+                                <td>$50K</td>
+                                <td>$300K</td>
+                                <td>$2M</td>
+                                <td>$15-30M</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Planning Assistant</strong></td>
+                                <td>$100K</td>
+                                <td>$600K</td>
+                                <td>$4M</td>
+                                <td>$25-45M</td>
+                            </tr>
+                            <tr>
+                                <td><strong>ChatGPT Apps</strong></td>
+                                <td>$80K</td>
+                                <td>$500K</td>
+                                <td>$3M</td>
+                                <td>$20-40M</td>
+                            </tr>
+                            <tr class="total-row">
+                                <td><strong>Portfolio Total</strong></td>
+                                <td><strong>$650K</strong></td>
+                                <td><strong>$4.1M</strong></td>
+                                <td><strong>$28M</strong></td>
+                                <td><strong>$175-325M</strong></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Insights -->
+        <section class="comparison-section insights-section">
+            <div class="container">
+                <h2 class="section-title">Key Investment Insights</h2>
+                <div class="insights-grid">
+                    <div class="insight-card">
+                        <div class="insight-icon">🎯</div>
+                        <h3>Portfolio Diversification</h3>
+                        <p>7 products across 5 distinct markets reduce concentration risk while maximizing TAM exposure ($150B+ combined)</p>
+                    </div>
+                    <div class="insight-card">
+                        <div class="insight-icon">⚡</div>
+                        <h3>Fast Validation Path</h3>
+                        <p>Two products (Supervisor Assistant, Compliance) can generate cash flow within 2-3 months to validate the model</p>
+                    </div>
+                    <div class="insight-card">
+                        <div class="insight-icon">📈</div>
+                        <h3>Regulatory Tailwinds</h3>
+                        <p>Ethics Engine and Compliance Platform benefit from EU AI Act and increasing governance requirements</p>
+                    </div>
+                    <div class="insight-card">
+                        <div class="insight-icon">🏗️</div>
+                        <h3>Proven Builder</h3>
+                        <p>Compliance POC built in 4 weeks demonstrates rapid execution capability across the portfolio</p>
+                    </div>
+                    <div class="insight-card">
+                        <div class="insight-icon">💰</div>
+                        <h3>Multiple Exit Paths</h3>
+                        <p>Each product serves different acquirers: enterprise software, HR tech, construction tech, EdTech</p>
+                    </div>
+                    <div class="insight-card">
+                        <div class="insight-icon">🔬</div>
+                        <h3>AI Infrastructure Play</h3>
+                        <p>All products leverage multi-agent architectures, positioning for the future of AI development</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <h2>Ready to Explore These Opportunities?</h2>
+                <p>Access detailed market research, technical specifications, and investment models</p>
+                <a href="mailto:contact@portfolio.com" class="btn-primary">Schedule a Discussion</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Software Portfolio. <a href="index.html" style="color: inherit; text-decoration: underline;">Back to Portfolio</a></p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <script src="assets/js/comparison-charts.js"></script>
+</body>
+</html>
